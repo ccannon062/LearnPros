@@ -1,0 +1,294 @@
+/* AUTHOR AND STATEMENTS */
+/* By: Caleb Cannon */
+/* Please refer to comments in order to navigate the CSS page properly. */
+/* The sizing chart for the fonts, images, and other elements can be found directly below this comment */
+
+/* 
+--- 01 TYPOGRAPHY SYSTEM ---
+
+- FONT WEIGHT:
+Default: 400
+
+- LINE HEIGHT:
+Default: 1
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--- 02 COLORS ---
+
+- PRIMARY: #1f1f1f, #00ff87
+- TINTS: 
+- SHADES:
+- ACCENTS:
+- GREYS:
+
+--- 03 SHADOWS ---
+
+--- 04 BORDER-RADIUS ---
+
+--- 07 WHITESPACE ---
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* NAV SECTION */
+
+nav {
+  background-color: #1f1f1f;
+  height: 10vh;
+  overflow: hidden;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -2rem;
+}
+
+.list-flex {
+  list-style: none;
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+}
+
+.list-item {
+  text-transform: uppercase;
+  transition: 0.5s color;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.list-item:link,
+.list-item:visited {
+  color: #fff;
+}
+
+.list-item:hover,
+.listitem:active {
+  color: #00ff87;
+  text-decoration: underline;
+}
+
+.list-flex2 {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-right: 2rem;
+  align-items: center;
+}
+
+.logo {
+  height: 10rem;
+  width: 15rem;
+  margin-left: 2rem;
+}
+
+.personicon {
+  color: #00ff87;
+  margin-right: -1.3rem;
+  font-size: 24px;
+}
+
+.chevron {
+  margin-left: -5.6rem;
+}
+
+/* HERO SECTION */
+
+.hero {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  padding: 0 5%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-size: cover;
+  background-image: url(img/study.mp4);
+}
+
+.content {
+  margin-top: -17rem;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  padding-bottom: 1.2rem;
+  font-weight: 800;
+}
+
+.content p {
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  font-weight: 800;
+  padding-bottom: 3.5rem;
+}
+
+.text-box {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content a {
+  text-decoration: none;
+  width: 20%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  padding: 14px 70px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 800;
+  transition: 0.2s background-color;
+  transition: 0.2s color;
+}
+
+.hero-btn:link,
+.hero-btn:visited {
+  border: 2px solid #1f1f1f;
+  color: #1f1f1f;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+/* ENDORSEMENT SECTION */
+
+.endorsement {
+  height: 50vh;
+  color: #f2f2f2;
+}
+
+.feature-title {
+  color: #1f1f1fde;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: -8rem;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.endorsement-logos {
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 15rem;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.endlogo {
+  height: 2.5rem;
+  filter: brightness(0);
+  opacity: 90%;
+}
+
+/* FEATURES SECTION */
+
+.features {
+  background-color: #1f1f1f;
+}
+
+.features-intro {
+  text-align: center;
+  padding-top: 2rem;
+  font-weight: 600;
+}
+
+.features-section {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100vw;
+  overflow: hidden;
+  align-items: center;
+  justify-items: center;
+}
+
+.feature-card {
+  width: 30rem;
+  height: 22rem;
+  background-color: #2c2c2c;
+  padding: 2rem;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.feature-card:hover,
+.feature-card:active {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 255, 136, 0.2);
+}
+
+.title {
+  font-weight: 600;
+}
+
+.feature-flex {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 0.2rem;
+}
+
+.feature-card p:last-child {
+  line-height: 1.5;
+}
+
+.feature-icon {
+  font-size: 26px;
+  color: #00ff87;
+}
+
+/* CAROUSEL */
+
+.swiper-container {
+  height: 75vh;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
